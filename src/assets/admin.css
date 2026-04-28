@@ -1,0 +1,188 @@
+/* Базовые контейнеры */
+.admin-dashboard { 
+  padding: 20px; 
+  background: white; 
+  border-radius: 8px; 
+}
+
+/* Вкладки */
+.tabs { 
+  display: flex; 
+  margin-bottom: 20px; 
+  border-bottom: 2px solid #eee; 
+}
+.tabs button { 
+  flex: 1; 
+  padding: 12px; 
+  border: none; 
+  background: none; 
+  font-size: 16px; 
+  cursor: pointer; 
+  color: #888; 
+  transition: 0.3s; 
+}
+.tabs button:hover { 
+  background: #f8f9fa; 
+}
+.tabs button.active { 
+  color: #2c3e50; 
+  border-bottom: 3px solid #2c3e50; 
+  font-weight: bold; 
+}
+
+/* Фильтры */
+.filters-panel { 
+  display: flex; 
+  gap: 20px; 
+  align-items: flex-end; 
+  background: #f8f9fa; 
+  padding: 15px; 
+  border-radius: 8px; 
+  margin-bottom: 20px; 
+  flex-wrap: wrap; 
+}
+.branch-filter { 
+  background: #e8f4f8; 
+  border: 1px solid #bce8f1; 
+}
+.filter-group label { 
+  display: block; 
+  font-size: 12px; 
+  margin-bottom: 5px; 
+  color: #555; 
+}
+.filter-group select, 
+.filter-group input { 
+  padding: 8px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  min-width: 150px; 
+}
+
+/* Кнопки */
+.btn-clear { 
+  padding: 8px 15px; 
+  background: #e0e0e0; 
+  border: none; 
+  border-radius: 4px; 
+  cursor: pointer; 
+}
+.btn-create { 
+  background: #42b983; 
+  color: white; 
+  border: none; 
+  padding: 12px 20px; 
+  border-radius: 4px; 
+  cursor: pointer; 
+  font-weight: bold; 
+  font-size: 15px; 
+}
+.btn-create:hover { 
+  background: #3aa876; 
+}
+.btn-cancel { 
+  background: transparent; 
+  border: 1px solid #dc3545; 
+  color: #dc3545; 
+  padding: 5px 10px; 
+  border-radius: 4px; 
+  cursor: pointer; 
+}
+.btn-cancel:hover { 
+  background: #dc3545; 
+  color: white; 
+}
+.btn-action { 
+  background: #17a2b8; 
+  color: white; 
+  border: none; 
+  padding: 6px 10px; 
+  border-radius: 4px; 
+  cursor: pointer; 
+  font-size: 12px; 
+}
+
+/* Таблицы */
+.table-responsive { 
+  overflow-x: auto; 
+}
+.admin-table { 
+  width: 100%; 
+  border-collapse: collapse; 
+  text-align: left; 
+}
+.admin-table th { 
+  background: #2c3e50; 
+  color: white; 
+  padding: 12px; 
+}
+.admin-table td { 
+  padding: 12px; 
+  border-bottom: 1px solid #eee; 
+}
+.status-select { 
+  padding: 5px; 
+  border-radius: 4px; 
+  font-weight: bold; 
+  cursor: pointer; 
+  border: 1px solid #ccc; 
+}
+.actions-cell { 
+  display: flex; 
+  gap: 8px; 
+  align-items: center; 
+}
+
+/* Отделы (DepartmentsTab) */
+.department-block { 
+  background: white; 
+  border: 1px solid #e0e0e0; 
+  border-radius: 8px; 
+  margin-bottom: 25px; 
+  box-shadow: 0 4px 6px rgba(0,0,0,0.02); 
+  overflow: hidden; 
+}
+.department-header { 
+  background: #f8f9fa; 
+  padding: 15px 20px; 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  border-bottom: 1px solid #e0e0e0; 
+}
+.department-header h3 { 
+  margin: 0; 
+  color: #2c3e50; 
+  font-size: 18px; 
+}
+.department-body { 
+  padding: 20px; 
+}
+
+/* Бейджи (например, у менеджеров) */
+.badge { 
+  background: #eee; 
+  padding: 3px 8px; 
+  border-radius: 10px; 
+  margin-right: 5px; 
+  font-size: 12px; 
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+/* Формы внутри модалок */
+.form-group { 
+  margin-bottom: 15px; 
+}
+.form-group label { 
+  display: block; 
+  margin-bottom: 5px; 
+  font-size: 14px; 
+}
+.form-group input { 
+  width: 100%; 
+  padding: 8px; 
+  border: 1px solid #ddd; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+}
